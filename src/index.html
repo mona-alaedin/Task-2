@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسک دوره جاوااسکریپت</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+    integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+      <p class="title">لیست تراکنش ها</p>
+      <form class="search-container">
+        <input class="search-input" type="text" placeholder="جستجو تراکنش">
+        <button class="search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 30 30">
+            <path
+              d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
+            </path>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <button class="getData-btn">بارگزاری تراکنش ها</button>
+
+    <div class="data-container">
+      <p class="table-title">لیست تراکنش های شما</p>
+      <table class="table-data">
+        <thead>
+          <tr>
+            <th>ردیف</th>
+            <th>نوع تراکنش</th>
+            <th class="price-btn">مبلغ <i class="fa fa-chevron-down"></i></th>
+            <th>شماره پیگیری</th>
+            <th class="date-btn">تاریخ تراکنش <i class="fa fa-chevron-down"></i></th>
+          </tr>
+        </thead>
+
+        <tbody class="table-body">
+        </tbody>
+
+      </table>
+
+    </div>
+  </div>
+</body>
+<script type="module" src="/src/js/index.js"></script>
+
+</html>
